@@ -12,8 +12,8 @@ def index():
         username=request.form.get("username")
         password=request.form.get("password")
 
-        if username == "bikman123@" and password == "paswd12345":
-            return render_template('greet.html',name=request.args.get("Bikman"))
+        if username == "bikman123@" and password == "password123":
+            return render_template('Sign.html',name=request.args.get("Bikman"))
         else:
             return render_template('index.html',wrong_credential=request.args.get("Wrong credentials !"))
 
