@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block any_word %}
+    
+    <form action="/greet" method="get">
+        <input type="text" placeholder="Enter name" autofocus name="fname" autocomplete="off">
+        <button type="submit">Search</button>
+    </form>
+
+{% endblock%}

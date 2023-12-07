@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block any_word %}
+    
+  <div class="login-container" style="margin-top:-100px;">
+    <div class="login-form">
+      
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h4>LOGIN</h4>
+        </div>
+      </div><br>
+
+      <form method="POST">
+        <label for="email">Username</label>
+        <input type="email" name="email" class="form-control" placeholder="Enter username" autofocus>
+
+        <label for="password">Password</label>
+        <input type="password" name="password" class="form-control" placeholder="Enter password">
+
+        <div>
+          <div class="col-md-12 text-center">
+            <button class="btn btn-light" style="text-align: center;display: inline-flex;"><i class="fa fa-lock-open"></i>&nbsp;&nbsp;Login</button><br><br>
+            <a onclick="window.location.href='ForgotPswd.php'" id="forgotpswd"><i class="fa fa-key"></i> Forgot password</a>
+          </div>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+{% endblock%}
